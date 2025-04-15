@@ -1,3 +1,12 @@
 :root{
-    --color-1: #fff;
+    --color-1: #fffacd;
+    --color-2: #a12f2f;
+}
+@font-face {
+    font-family: "frost-scream";
+    src: url(../assets/font/frost-scream/Frost\ Scream.otf);
+}
+@font-face {
+    font-family: "Jacquard24-Regular";
+    src: url(../assets/font/Jacquard_24/Jacquard24-Regular.ttf);
 }

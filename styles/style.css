@@ -1,6 +1,99 @@
 @import url(variables.css);
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+#video__background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.star__game {
+    /* background: red; */
+    padding: 20px;
+    margin-top: 400px;
+    display: flex;
+    justify-content: center
+}
+
+.article__star {
+    /* background: green; */
+    /* padding: 40px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+}
+
+.title__start {
+    /* background: blue; */
+}
+
+.title__start h1 {
+    font-family: "frost-scream";
+    font-size: 110px;
+    color: var(--color-2);
+    letter-spacing: 9px;
+    text-shadow: 0px 0px 0 #f2ebeb, -1px 5px 0 #ffffff2e, 4px 8px 0 #000000, 0px 0px 0 #ffffff, 0 1px 0 #ffffff, 1px 0 0 red, 0 0px 0 #ffffff, 6px 8px 0 #f7f7f785;
+}
+
+.div__text-start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.div__text-start h3 {
+    color: var(--color-1);
+    text-shadow: 0px 0px 0 #f2ebeb, 0px 0px 0 #ffffff2e, 0px 0px 0 #000000, 0px 0px 0 #ffffff, 0px 0px 0 #ffffff, 0px 0 0 red, 0 0px 0 #ffffff, 3px 2px 20px #fffffff7;
+    font-size: 50px;
+    font-family: "Jacquard24-Regular";
+    font-weight: 200;
+}
+
+/************button**************/
+.button__game {
+    position: relative;
+    display: inline-block;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    transition: transform 0.2s ease;
+
+}
+
+.button__game:hover{
+    transform: scale(1.1);
+}
+
+.button__game img {
+    display: block;
+    width: 100%;
+}
+
+.text__button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "frost-scream", serif;
+    font-size: 30px;
+    color: var(--color-1);
+    text-shadow: 0 0 10px white;
+    pointer-events: none;
+}
+.text__button:hover {
+    transform: scale(1.1);
+  }
