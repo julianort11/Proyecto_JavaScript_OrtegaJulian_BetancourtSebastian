@@ -34,10 +34,6 @@
     gap: 28px;
 }
 
-.title__start {
-    /* background: blue; */
-}
-
 .title__start h1 {
     font-family: "frost-scream";
     font-size: 110px;
@@ -65,6 +61,7 @@
 /************button**************/
 .button__game {
     position: relative;
+    overflow: hidden;
     display: inline-block;
     background: transparent;
     border: none;

@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/styles/style.css">
-    <script src="../scr/js/main.js"></script>
+    <script type="module" src="../scr/js/main.js"></script>
 </head>
 <body>
 
-    <video autoplay muted loop id="video__background">
+    <video autoplay loop id="video__background">
         <source src="/assets/videos/juegoback.mp4" type="video/mp4" />
       </video>
     
@@ -21,10 +21,10 @@
                 </div>
                 <div class="div__text-start">
                     <h3>Estas preparado para empezar la aventura</h3>
-                    <button class="button__game">
+                    <a href="./views/create.html" class="button__game">
                         <img src="../assets/img/Frame.svg" alt="marco__boton">
-                        <span class="text__button">Empecemos</span>
-                    </button>
+                        <span class="text__button">Empecemos</span> 
+                    </a>
                 </div>
             </article>
         </section>
