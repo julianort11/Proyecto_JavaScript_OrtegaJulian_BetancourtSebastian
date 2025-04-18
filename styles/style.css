@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+body {
+    overflow-y: hidden;
+    font-family: 'Cinzel', serif;
+}
+
 #video__background {
     position: fixed;
     top: 0;
@@ -18,47 +23,54 @@
 }
 
 .star__game {
-    /* background: red; */
-    padding: 20px;
-    margin-top: 400px;
+    padding: 2vh;
+    margin-top: 35vh;
     display: flex;
-    justify-content: center
+    justify-content: center;
 }
 
 .article__star {
-    /* background: green; */
-    /* padding: 40px; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 28px;
+    gap: 5vh;
+    text-align: center;
+    width: 90%;
 }
 
 .title__start h1 {
     font-family: "frost-scream";
-    font-size: 110px;
+    font-size: 500%;
     color: var(--color-2);
-    letter-spacing: 9px;
-    text-shadow: 0px 0px 0 #f2ebeb, -1px 5px 0 #ffffff2e, 4px 8px 0 #000000, 0px 0px 0 #ffffff, 0 1px 0 #ffffff, 1px 0 0 red, 0 0px 0 #ffffff, 6px 8px 0 #f7f7f785;
+    letter-spacing: clamp(4px, 0.8vw, 12px);
+    text-shadow: 
+        0px 0px 0 #f2ebeb,
+        -1px 5px 0 #ffffff2e,
+        4px 8px 0 #000000,
+        0px 0px 0 #ffffff,
+        0 1px 0 #ffffff,
+        1px 0 0 red,
+        0 0px 0 #ffffff,
+        6px 8px 0 #f7f7f785;
 }
 
 .div__text-start {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    gap: 10px;
+    gap: 2vh;
+    width: 100%;
 }
 
 .div__text-start h3 {
     color: var(--color-1);
     text-shadow: 0px 0px 0 #f2ebeb, 0px 0px 0 #ffffff2e, 0px 0px 0 #000000, 0px 0px 0 #ffffff, 0px 0px 0 #ffffff, 0px 0 0 red, 0 0px 0 #ffffff, 3px 2px 20px #fffffff7;
-    font-size: 50px;
+    font-size: 200%;
     font-family: "Jacquard24-Regular";
     font-weight: 200;
 }
 
-/************button**************/
+/************ Botón **************/
 .button__game {
     position: relative;
     overflow: hidden;
@@ -66,18 +78,20 @@
     background: transparent;
     border: none;
     cursor: pointer;
-    align-items: center;
     transition: transform 0.2s ease;
-
+    width: clamp(180px, 40vw, 300px);
+    aspect-ratio: 5 / 2;
 }
 
-.button__game:hover{
-    transform: scale(1.1);
+.button__game:hover {
+    transform: scale(1.05);
 }
 
 .button__game img {
     display: block;
     width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .text__button {
@@ -86,15 +100,17 @@
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: "frost-scream", serif;
-    font-size: 30px;
+    font-size: clamp(1rem, 2.5vw, 2rem);
     color: var(--color-1);
     text-shadow: 0 0 10px white;
     pointer-events: none;
 }
+
 .text__button:hover {
     transform: scale(1.1);
 }
-/***************transicion**********************/
+
+/*************** Transición **********************/
 .transition-screen {
     position: fixed;
     top: 0; left: 0;
@@ -106,7 +122,7 @@
     transition: opacity 0.8s ease;
     z-index: 9999;
 }
-  
+
 .transition-screen.active {
     opacity: 1;
     pointer-events: all;
