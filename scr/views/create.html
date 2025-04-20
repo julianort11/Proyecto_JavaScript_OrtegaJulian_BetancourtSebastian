@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/styles/styles-create.css">
-    <script src="../scr/js/main.js"></script>
+    <script type="module" src="../js/game.js" defer></script>
 </head>
 <body>
     <header>
@@ -19,14 +19,14 @@
         <div class="menu__button">▼</div>
         <ul class="nav__menu">
           <li><a href="create.html">Home</a></li>
-          <li><a href="#">Character</a></li>
-          <li><a href="#">Library</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="#Character">Character</a></li>
+          <li><a href="#Library">Library</a></li>
+          <li><a href="#Contact">Contact Us</a></li>
         </ul>
       </nav>
       
       <main class="main__container">
-        <section class="main__content">
+        <section class="main__content" id="mainContent">
           <h2>Welcome</h2>
           <p>GameCampus está desarrollando un ambicioso videojuego de fantasía épica. Para ello, han solicitado la creación de una plataforma avanzada de generación de personajes que permita a los usuarios filtrar a sus héroes basado en las opciones que este escoja (Dicho dataset estará basado en el mundo de Dungeons & Dragons).
 
@@ -123,7 +123,7 @@
       </main>
     <footer>
         <div class="div__text-footer">
-            <p>Auther By Sebastian Betancourt</p>
+            <p>Auther By Sebastian Betancourt and Julian Ortega</p>
         </div>
         <div class="div__img-footer">
             <img src="#"><img src="#"><img src="#">
