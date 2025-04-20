@@ -19,6 +19,7 @@ body {
 
 a{
     text-decoration: none;
+    color: inherit;
 }
 
 header {
@@ -180,3 +181,39 @@ nav.nav-medieval {
 
   /* ----------------Responsivo------------------------ */
   
+/************* list library***************************/
+.library__section ul {
+  display: none;
+  margin: 0.5rem 0 1.5rem;
+  padding-left: 1.5rem;
+  list-style: square;
+  color: white;
+}
+
+.library__section ul.show {
+  display: block;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.displayed__list {
+  cursor: pointer;
+  color: var(--color-1);
+  text-shadow: 1px 1px 2px #000;
+  transition: color 0.3s ease;
+  margin-top: 1.2rem;
+}
+
+.displayed__list:hover {
+  color: var(--color-2);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
