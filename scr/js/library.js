@@ -33,9 +33,9 @@ export function loadedBookshop() {
                 </div>
               `;
             }
-
-            if (weapons?.results) {
-                const weaponList = weapons.results.map(w => `<li>${w.name}</li>`).join("");
+              // no
+            if (weapons?.equipment) {
+                const weaponList = weapons.equipment.map(w => `<li>${w.name}</li>`).join("");
                 libraryContent.innerHTML += `
                 <div class="library__section">
                   <h3 class="displayed__list">Armas disponibles:</h3>
@@ -43,9 +43,9 @@ export function loadedBookshop() {
                 </div>
               `;
             }
-
-            if (armors?.results) {
-                const armorList = armors.results.map(a => `<li>${a.name}</li>`).join("");
+              // no
+            if (armors?.equipment) {
+                const armorList = armors.equipment.map(a => `<li>${a.name}</li>`).join("");
                 libraryContent.innerHTML += `
                 <div class="library__section">
                   <h3 class="displayed__list">Armaduras disponibles:</h3>
@@ -53,7 +53,7 @@ export function loadedBookshop() {
                 </div>
               `;
             }
-
+              
             if (features?.results) {
                 const featureList = features.results.map(f => `<li>${f.name}</li>`).join("");
                 libraryContent.innerHTML += `
