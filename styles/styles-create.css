@@ -246,7 +246,6 @@ nav.nav-medieval {
     4px 4px 10px rgba(0, 0, 0, 0.6),
     -4px -4px 10px rgba(0, 0, 0, 0.4),
     inset 0 2px 5px rgba(255, 255, 255, 0.1);
-  background: #2a1c13;
 }
 
 .button__add:active {
@@ -262,7 +261,7 @@ nav.nav-medieval {
 
 
 .div__card {
-  margin-bottom: 4;
+  margin-bottom: 4%;
   background: linear-gradient(to bottom right, #d2b378, #a97b50);
   width: 12em;
   height: 16em;
@@ -328,7 +327,7 @@ nav.nav-medieval {
 .card-info {
   flex: 1;
   padding: 6px;
-  font-size: 8px;
+  font-size: 10px;
   font-family: serif;
 }
 .card-info p{
@@ -336,10 +335,11 @@ nav.nav-medieval {
 }
 
 .card-footer {
-  position: relative;
-  top: 13px;
-  left: 110px;
-  width: 30.5%;
+  display: flex;
+  margin-top: 6px;
+  margin-left: 110px;
+  justify-content: center;
+  width: 33.5%;
   background: #d4ba83;
   border: 1px solid #3e2b1e;
   border-radius: 6px;
@@ -364,8 +364,109 @@ nav.nav-medieval {
 
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #5e2727;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #867d5d;
+  border-radius: 10px;
+}
 
-webk
+
+
+/* -------------------------Button ADD------------------------------- */
+
+
+.dialog__Add{
+  justify-self: center;
+  align-self: center;
+  width: 23rem;
+  height: 36rem;
+  background: linear-gradient(to bottom right, #d2b378, #a97b50);
+  overflow-y: scroll;
+}
+
+
+.carousel {
+  margin-top: 10px;
+  position: relative;
+  width: 100%;
+  height: 12rem;
+  padding: 10px;
+}
+
+
+.carousel-item {
+  background: #472b1840;
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+  width: 100%;
+  height: 200px;
+  display: none;
+}
+.carousel-item p{
+  font-family: "frost-scream";
+  font-weight: 800;
+  font-size: 17px;
+  color: #493c2f;
+}
+
+.carousel-item img {
+  width: 150px;
+  height: 160px;
+}
+
+.carousel-item.active {
+  display: block;
+}
+.carousel-item.active  img{
+  margin-left: 87px;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 40%;
+  background: transparent;
+  color: white;
+  font-size: 2em;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-control.prev {
+  left: 10px;
+}
+
+.carousel-control.next {
+  right: 10px;
+}
+
+.carousel-control:hover {
+  box-shadow:
+    inset 0 0 25px rgba(44, 30, 16, 0.5),
+    0 10px 20px rgba(0, 0, 0, 0.6),
+    0 0 8px rgba(40, 20, 10, 0.4); 
+  transform: scale(1.01);
+}
+
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #5e2727;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #867d5d;
+  border-radius: 10px;
+}
 
 /************* list library***************************/
 .library__section ul {

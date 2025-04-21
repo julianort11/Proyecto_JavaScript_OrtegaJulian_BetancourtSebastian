@@ -1,12 +1,13 @@
 import { fetchClasses, fetchRaces, fetchArmors, fetchWeapons, fetchFeatures } from "./ddApi.js";
-import {characters} from "./characters.js";
+import {renderCharacters} from "./characters.js";
+
 
 document.addEventListener("DOMContentLoaded", () => {
     const mainContent = document.getElementById("mainContent");
 
     document.querySelector('a[href="#Character"]').addEventListener("click", (e) => {
         e.preventDefault();
-        mainContent.innerHTML = characters()
+        renderCharacters();
     });
 
     document.querySelector('a[href="#Library"]').addEventListener("click", (e) => {
@@ -81,11 +82,4 @@ document.addEventListener("DOMContentLoaded", () => {
           });
       });
 
-      Selector('a[href="#Contact"]').addEventListener("click", (e) => {
-            e.preventDefault();
-            mainContent.innerHTML = `
-        <h2>Contacto</h2>
-        <p>Para dudas</p>
-      `;
-        });
     });
