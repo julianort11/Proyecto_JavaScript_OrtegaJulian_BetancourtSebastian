@@ -1,14 +1,12 @@
 import { fetchClasses, fetchRaces, fetchArmors, fetchWeapons, fetchFeatures } from "./ddApi.js";
+import {characters} from "./characters.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     const mainContent = document.getElementById("mainContent");
 
     document.querySelector('a[href="#Character"]').addEventListener("click", (e) => {
         e.preventDefault();
-        mainContent.innerHTML = `
-        <h2>Personajes</h2>
-        <p>Acá podrás crear tus personajes personalizados.</p>
-      `;
+        mainContent.innerHTML = characters()
     });
 
     document.querySelector('a[href="#Library"]').addEventListener("click", (e) => {

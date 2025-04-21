@@ -11,6 +11,7 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), 
               url('../assets/img/epicant.webp');
   background-size: cover;
+  background-repeat: none;
   background-position: center;
   font-family: 'Cinzel', serif;
 }
@@ -59,7 +60,7 @@ header {
 /* ---------------- NAV ------------------ */
 
 nav.nav-medieval {
-    position: relative;
+    position:sticky;
     display: flex;
     justify-self: center;
     top: 2.5%;
@@ -179,8 +180,193 @@ nav.nav-medieval {
     gap: 10px;
   }
 
-  /* ----------------Responsivo------------------------ */
-  
+/* -----------------------Characters------------------------------ */
+.div__characters{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 4% 4% 0 4%;
+  justify-content: center;
+  gap: 6%;
+}
+.div__add {
+  margin-bottom: 6%;
+  background: linear-gradient(to bottom right, #d2b378, #a97b50);
+  width: 12em;
+  height: 16em;
+  border: 10px solid #5a3d29; 
+  border-radius: 14px;
+  box-shadow:
+    inset 0 0 25px rgba(44, 30, 16, 0.5),
+    0 10px 20px rgba(0, 0, 0, 0.6),
+    0 0 8px rgba(40, 20, 10, 0.4); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-blend-mode: multiply;
+}
+
+.div__add button {
+  border: none;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #8a6742, #483118); 
+  border-radius: 10px;
+  box-shadow:
+    inset 0 0 5px rgba(0,0,0,0.4),
+    0 0 10px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.div__add button:hover {
+  transform: scale(1.03);
+}
+
+.button__add {
+  background: #3b2a1e; 
+  box-shadow:
+    3px 3px 6px rgba(15, 10, 5, 0.6),
+    -3px -3px 6px rgba(5, 2, 0, 0.4),
+    inset 0 1px 3px rgba(255, 255, 255, 0.1);
+  width: 30%;
+  height: 20%;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 1s ease, background 0.2s ease;
+}
+
+.button__add:hover {
+  box-shadow:
+    4px 4px 10px rgba(0, 0, 0, 0.6),
+    -4px -4px 10px rgba(0, 0, 0, 0.4),
+    inset 0 2px 5px rgba(255, 255, 255, 0.1);
+  background: #2a1c13;
+}
+
+.button__add:active {
+  background: #5a3d29;
+}
+
+
+
+
+
+
+
+
+
+.div__card {
+  margin-bottom: 4;
+  background: linear-gradient(to bottom right, #d2b378, #a97b50);
+  width: 12em;
+  height: 16em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  box-shadow:
+    0 0 10px rgba(0, 0, 0, 0.5),
+    inset 0 0 20px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.card-frame {
+  background: #f1e7c4;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #3e2b1e;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.card-frame a{
+  text-decoration: none;
+}
+
+.card-frame:hover{
+  transform: scale(1.02);
+}
+
+.card-top-banner {
+  background: linear-gradient(to bottom, #e0c28f, #c4a55c);
+  height: 20px;
+  border-bottom: 1px solid #3e2b1e;
+  text-align: center;
+  color: #2c1e10;
+  align-content: center;
+  font-size: 15px;
+}
+
+.card-image {
+  background: linear-gradient(to bottom, #a6906abf, #7d6938);
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-image img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.card-separator {
+  background: linear-gradient(to bottom, #e0c28f, #c4a55c);
+  height: 15px;
+  border-top: 1px solid #3e2b1e;
+  border-bottom: 1px solid #3e2b1e;
+}
+
+.card-info {
+  flex: 1;
+  padding: 6px;
+  font-size: 8px;
+  font-family: serif;
+}
+.card-info p{
+  color: #2c1e10;
+}
+
+.card-footer {
+  position: relative;
+  top: 13px;
+  left: 110px;
+  width: 30.5%;
+  background: #d4ba83;
+  border: 1px solid #3e2b1e;
+  border-radius: 6px;
+  font-size: 10px;
+  justify-items: center;
+  text-align: center;
+}
+
+.card-footer img {
+  width: 12px;
+  margin-right: 2px;
+}
+.card-footer a{
+  text-decoration: none;
+  color: #5d3c1b;
+}
+.card-footer:hover{
+  background: linear-gradient(to bottom right, #d2b378, #a97b50);
+}
+.card-footer:active{
+  background: linear-gradient(to bottom right, #987a41, #a97b50);
+
+}
+
+
+webk
+
 /************* list library***************************/
 .library__section ul {
   display: none;
@@ -217,3 +403,4 @@ nav.nav-medieval {
     transform: translateY(0);
   }
 }
+
