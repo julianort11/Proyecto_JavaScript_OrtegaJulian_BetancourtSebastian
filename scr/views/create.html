@@ -1,133 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/styles/styles-create.css">
-    <script type="module" src="../js/game.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/styles/styles-create.css">
+  <script type="module" src="../js/game.js" defer></script>
 </head>
+
 <body>
-    <header>
-        <div class="div__header">
-          <img src="/assets/img/header.png">
-          <a href="create.html"><h1>Game Campus</h1></a>
-        </div>
-      </header>
-      
-      <nav class="nav-medieval">
-        <div class="menu__button">▼</div>
-        <ul class="nav__menu">
-          <li><a href="create.html">Home</a></li>
-          <li><a href="#Character">Character</a></li>
-          <li><a href="#Library">Library</a></li>
-          <li><a href="#Contact">Contact Us</a></li>
-        </ul>
-      </nav>
-      
-      <main class="main__container">
-        <section class="main__content" id="mainContent">
-          <h2>Welcome</h2>
-          <p>GameCampus está desarrollando un ambicioso videojuego de fantasía épica. Para ello, han solicitado la creación de una plataforma avanzada de generación de personajes que permita a los usuarios filtrar a sus héroes basado en las opciones que este escoja (Dicho dataset estará basado en el mundo de Dungeons & Dragons).
+  <header>
+    <div class="div__header">
+      <img src="/assets/img/header.png">
+      <a href="create.html">
+        <h1>Game Campus</h1>
+      </a>
+    </div>
+  </header>
 
+  <nav class="nav-medieval">
+    <div class="menu__button">▼</div>
+    <ul class="nav__menu">
+      <li><a href="create.html">Home</a></li>
+      <li><a href="#Character">Character</a></li>
+      <li><a href="#Library">Library</a></li>
+      <li><a href="#Contact">Contact Us</a></li>
+    </ul>
+  </nav>
 
+  <main class="main__container">
+    <section class="main__content" id="mainContent">
+      <h2>Welcome</h2>
+      <p>Bienvenido a GameCampus: Forjador de Héroes<br>
+        ¿Estás listo para crear al héroe definitivo?<br><br>
 
-            El objetivo de este proyecto es construir una aplicación web interactiva y visualmente impresionante que permita a los usuarios escoger la raza, clase, género, equipo, armas, habilidades especiales y estadísticas personalizadas.
-            
-            
-            
-            Especificaciones del Proyecto
-            Requisitos Funcionales
-            Página de Inicio (Landing Page)
-            Explicación de la plataforma con una introducción visual.
-            Filtración de Personajes
-            Los usuarios podrán filtrar los personaje desde cero eligiendo:
-            Nombre del personaje (personalizado).
-            Raza (obtenida de la API de razas de fantasía).
-            Clase (obtenida de la API de clases de fantasía).
-            Género (Masculino, Femenino, Otros).
-            Armadura y Armas (obtenidas de una API o creadas por el usuario).
-            Estadísticas Personalizadas (fuerza, destreza, inteligencia, etc.).
-            Habilidades Especiales (poderes, magias y habilidades obtenidas de la API).
-            Accesorios (cascos, anillos, medallas, etc.).
-            El personaje que al usuario le quede gustando tendrá la función de guardar para ser revisado luego en otra parte de la página.
-            Vista de Lista de Personajes
-            Se muestra una lista de todos los personajes filtrados por el usuario.
-            Cada personaje tendrá una opción de "Ver detalles".
-            
-            
-            Requisitos No Funcionales
-            Compatibilidad:
-            La aplicación debe ser funcional en navegadores modernos (Chrome, Firefox, Edge).
-            Diseño Responsivo:
-            La aplicación debe ser totalmente funcional en dispositivos móviles, tablets y desktop.
-            
-            <br><br><strong>API Pública Sugeridas</strong><br>
-            D&D 5e API - Información completa de razas, clases y habilidades.
-            Opción Avanzada: Usar MockAPI o JSONPlaceholder para crear una base de datos ficticia de armas, habilidades y razas.
-            
-            <br><br><strong>Estructura de Entrega</strong><br>
-            Carpeta del Proyecto:
-            /src: Código fuente principal.
-            /assets: Imágenes, íconos y recursos gráficos.
-            /styles: Hojas de estilo CSS o SASS.
-            Repositorio GitHub:
-            Proyecto entregado en un repositorio público.
-            Commit regulares para evidenciar el progreso.
-            README.md:
-            Descripción del proyecto y cómo ejecutarlo.
-            Instrucciones para la configuración de la API (Si aplica).
-            Requisitos No Funcionales
-            Compatibilidad:
-            La aplicación debe ser funcional en navegadores modernos (Chrome, Firefox, Edge).
-            Diseño Responsivo:
-            La aplicación debe ser totalmente funcional en dispositivos móviles, tablets y desktop.
-            
-            <br><br><strong>API Pública Sugeridas</strong><br>
-            D&D 5e API - Información completa de razas, clases y habilidades.
-            Opción Avanzada: Usar MockAPI o JSONPlaceholder para crear una base de datos ficticia de armas, habilidades y razas.
-            
-            <br><br><strong>Estructura de Entrega</strong><br>
-            Carpeta del Proyecto:
-            /src: Código fuente principal.
-            /assets: Imágenes, íconos y recursos gráficos.
-            /styles: Hojas de estilo CSS o SASS.
-            Repositorio GitHub:
-            Proyecto entregado en un repositorio público.
-            Commit regulares para evidenciar el progreso.
-            README.md:
-            Descripción del proyecto y cómo ejecutarlo.
-            Instrucciones para la configuración de la API (Si aplica).
-            Requisitos No Funcionales
-            Compatibilidad:
-            La aplicación debe ser funcional en navegadores modernos (Chrome, Firefox, Edge).
-            Diseño Responsivo:
-            La aplicación debe ser totalmente funcional en dispositivos móviles, tablets y desktop.
-            
-            <br><br><strong>API Pública Sugeridas</strong><br>
-            D&D 5e API - Información completa de razas, clases y habilidades.
-            Opción Avanzada: Usar MockAPI o JSONPlaceholder para crear una base de datos ficticia de armas, habilidades y razas.
-            
-            <br><br><strong>Estructura de Entrega</strong><br>
-            Carpeta del Proyecto:
-            /src: Código fuente principal.
-            /assets: Imágenes, íconos y recursos gráficos.
-            /styles: Hojas de estilo CSS o SASS.
-            Repositorio GitHub:
-            Proyecto entregado en un repositorio público.
-            Commit regulares para evidenciar el progreso.
-            README.md:
-            Descripción del proyecto y cómo ejecutarlo.
-            Instrucciones para la configuración de la API (Si aplica).</p>
-        </section>
-      </main>
-    <footer>
-        <div class="div__text-footer">
-            <p>Auther By Sebastian Betancourt and Julian Ortega</p>
-        </div>
-        <div class="div__img-footer">
-            <img src="#"><img src="#"><img src="#">
-        </div>
-    </footer>
+        Entra al corazón de un mundo de fantasía épica, donde tú eres el arquitecto del destino. Conviértete en el
+        creador de leyendas en una plataforma única inspirada en el universo de Dungeons & Dragons.<br>
+
+        🛡️ ¿Qué es GameCampus?<br><br>
+        GameCampus te da el poder de diseñar personajes totalmente personalizados con una experiencia visual envolvente.
+        Elige desde su raza hasta sus habilidades especiales y equipa a tu campeón con lo mejor del arsenal fantástico.
+        Luego, guarda tu creación para revivirla o compartirla cuando quieras.<br><br>
+
+        ⚔️ Características Principales<br><br>
+
+        Crea personajes únicos desde cero eligiendo entre:<br><br>
+
+        🧙 Nombre personalizado para tu héroe o heroína.<br>
+
+        🧝‍♂️ Raza: Elige entre humanos, elfos, orcos, enanos y más (desde nuestra API de razas fantásticas).<br>
+
+        🗡️ Clase: Sé un guerrero, mago, pícaro, clérigo y mucho más (desde la API de clases).<br>
+
+        ⚧️ Género: Masculino, Femenino o Personalizado.<br>
+
+        🛡️ Armaduras y armas: Usa nuestro arsenal o crea el tuyo.<br>
+
+        💪 Estadísticas personalizadas: Define fuerza, inteligencia, destreza, sabiduría, carisma, constitución.<br>
+
+        🔮 Habilidades especiales: Magias, poderes y talentos únicos de nuestro universo.<br>
+
+        💍 Accesorios legendarios: Anillos, colgantes, capas encantadas y más.<br><br>
+
+        💾 Guarda a tu héroe<br><br>
+        ¿Terminaste tu obra maestra? ¡Guárdala! Así podrás verla en tu galería personal, editarla o compartirla con
+        otros aventureros.<br><br>
+
+        📜 Vista de Personajes<br><br>
+        Explora una lista completa de personajes filtrados por tus elecciones, con la opción de ver detalles completos,
+        estadísticas y equipo.<br><br>
+
+        📱 Compatible con Todos tus Dispositivos<br>
+        La plataforma ha sido diseñada para ofrecer una experiencia fluida en móviles, tablets y computadoras de
+        escritorio. Siempre tendrás a tu héroe a tu alcance.</p>
+    </section>
+  </main>
+  <footer>
+    <div class="div__text-footer">
+      <p>Auther By Sebastian Betancourt and Julian Ortega</p>
+    </div>
+    <div class="div__img-footer">
+    </div>
+  </footer>
 </body>
+
 </html>
