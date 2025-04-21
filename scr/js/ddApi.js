@@ -7,11 +7,11 @@ export function fetchClasses() {
 export function fetchRaces() {
   return fetch(`${BASE_URL}/races`).then(respu => respu.json());
 }
-// no
+
 export function fetchArmors() {
   return fetch(`${BASE_URL}/equipment-categories/armor`).then(respu => respu.json());
 }
-// no
+
 export function fetchWeapons() {
   return fetch(`${BASE_URL}/equipment-categories/weapon`).then(respu => respu.json());
 }
