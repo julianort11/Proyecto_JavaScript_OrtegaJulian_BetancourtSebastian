@@ -1,9 +1,9 @@
 export function renderContact(mainContent) {
     mainContent.innerHTML = `
-    <h2>Contacto</h2>
     <div class="div__contact">
+      <h2>Contacto</h2>
+      <p>informacion:</p>
       <p>Para dudas</p>
-      <h3>informacion:</h3>
     </div>
     <div class="div__name">
       <div class="div__name_img">

@@ -2,8 +2,10 @@ import { fetchClasses, fetchRaces, fetchArmors, fetchWeapons, fetchFeatures } fr
 
 export function bookshop() {
     return `
+          <div class="main__library">
           <h2>Librería</h2>
           <p>Consulta habilidades, razas, clases, armas y armaduras.</p>
+          </div>
           <div id="libraryContent"></div>
         `;
 }
