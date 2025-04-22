@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="prueba.css">
+    <script defer src="prueba.js"></script>
+</head>
+<body>
+    <main>
+        <h2>Personajes</h2>
+            <dialog id="characterDialog" class="dialog__Add">
+                <div class="dialog__container">
+                  <button class="button__close" id="closeDialog">X</button>
+                  <div class="dialog__header">
+                    <h2>Create your character</h2>
+                  </div>
+
+                  
+                </div>
+                <div class="div__form">
+                    <form method="get" action="?">
+                        <div class="dialog__content">
+                            <strong>Write Name: </strong>
+                            <input type="text" name="name" placeholder="Write Name">
+                            <div class="classGame">
+                              <strong>Choose your Class: </strong>
+                            </div>
+        
+                            <div class="carousel">
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <img src="../../assets/img/Barbarian.png" alt="Barbarian">
+                                  <p>Barbarian</p>
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="../../assets/img/Bard.png" alt="Bard">
+                                  <p>Bard</p>
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="../../assets/img/Cleric.png" alt="Cleric">
+                                  <p>Cleric</p>
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="../../assets/img/Druid.png" alt="Druid">
+                                  <p>Druid</p>
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="../../assets/img/Fighter.png" alt="Fighter">
+                                  <p>Fighter</p>
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="../../assets/img/Monk.png" alt="Monk">
+                                  <p>Monk</p>
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="../../assets/img/Paladin.png" alt="Paladin">
+                                  <p>Paladin</p>
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="../../assets/img/Ranger.png" alt="Ranger">
+                                  <p>Ranger</p>
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="../../assets/img/Rogue.png" alt="Rogue">
+                                  <p>Rogue</p>
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="../../assets/img/Sorcerer.png" alt="Sorcerer">
+                                  <p>Sorcerer</p>
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="../../assets/img/Warlock.png" alt="Warlock">
+                                  <p>Warlock</p>
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="../../assets/img/Wizard.png" alt="Wizard"><br>
+                                  <p>Wizard</p>
+                                </div>
+                              </div>
+        
+                              <button class="carousel-control prev" id="prevButton">❮</button>
+                              <button class="carousel-control next" id="nextButton">❯</button>
+                            </div>
+                            
+                            <strong>Choose Raze</strong>
+                            <input type="text" name="name" placeholder="Write Name">
+                          </div>
+                    </form>
+                </div>
+            </dialog>
+            <div class="div__characters">
+                <div class="div__add">
+                    <button class="button__add" id="openDialog">
+                        <div class="button__add">
+                            <img src="../../assets/img/Add.svg" alt="Add Character">
+                        </div>
+                    </button>
+                </div>
+    </main>
+</body>
+</html>

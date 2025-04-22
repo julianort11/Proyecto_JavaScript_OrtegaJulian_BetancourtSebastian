@@ -14,7 +14,7 @@ const characters = async () => {
             <h2>Personajes</h2>
             <dialog id="characterDialog" class="dialog__Add">
                 <div class="dialog__container">
-                  <button id="closeDialog">X</button>
+                  <button class="button__close" id="closeDialog">X</button>
                   <div class="dialog__header">
                     <h2>Create your character</h2>
                   </div>
@@ -80,6 +80,12 @@ const characters = async () => {
                       <button class="carousel-control next" id="nextButton">❯</button>
                     </div>
                   </div>
+                </div>
+                <div class="div__form">
+                    <form action="?" method="get">
+                        <input type="text" name="name" id="name" placeholder="Enter name of character: ">
+                        <input type="detaliest" name="detalies" id="detalies" placeholder="Enter details of character: ">
+                    </form>
                 </div>
             </dialog>
             <div class="div__characters">
