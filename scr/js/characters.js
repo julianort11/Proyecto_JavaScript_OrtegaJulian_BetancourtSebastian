@@ -27,51 +27,51 @@ const characters = async () => {
                     <div class="carousel">
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img src="/assets/img/Barbarian.png" alt="Barbarian">
+                          <img src="../../assets/img/Barbarian.png" alt="Barbarian">
                           <p>Barbarian</p>
                         </div>
                         <div class="carousel-item">
-                          <img src="/assets/img/Bard.png" alt="Bard">
+                          <img src="../../assets/img/Bard.png" alt="Bard">
                           <p>Bard</p>
                         </div>
                         <div class="carousel-item">
-                          <img src="/assets/img/Cleric.png" alt="Cleric">
+                          <img src="../../assets/img/Cleric.png" alt="Cleric">
                           <p>Cleric</p>
                         </div>
                         <div class="carousel-item">
-                          <img src="/assets/img/Druid.png" alt="Druid">
+                          <img src="../../assets/img/Druid.png" alt="Druid">
                           <p>Druid</p>
                         </div>
                         <div class="carousel-item">
-                          <img src="/assets/img/Fighter.png" alt="Fighter">
+                          <img src="../../assets/img/Fighter.png" alt="Fighter">
                           <p>Fighter</p>
                         </div>
                         <div class="carousel-item">
-                          <img src="/assets/img/Monk.png" alt="Monk">
+                          <img src="../../assets/img/Monk.png" alt="Monk">
                           <p>Monk</p>
                         </div>
                         <div class="carousel-item">
-                          <img src="/assets/img/Paladin.png" alt="Paladin">
+                          <img src="../../assets/img/Paladin.png" alt="Paladin">
                           <p>Paladin</p>
                         </div>
                         <div class="carousel-item">
-                          <img src="/assets/img/Ranger.png" alt="Ranger">
+                          <img src="../../assets/img/Ranger.png" alt="Ranger">
                           <p>Ranger</p>
                         </div>
                         <div class="carousel-item">
-                          <img src="/assets/img/Rogue.png" alt="Rogue">
+                          <img src="../../assets/img/Rogue.png" alt="Rogue">
                           <p>Rogue</p>
                         </div>
                         <div class="carousel-item">
-                          <img src="/assets/img/Sorcerer.png" alt="Sorcerer">
+                          <img src="../../assets/img/Sorcerer.png" alt="Sorcerer">
                           <p>Sorcerer</p>
                         </div>
                         <div class="carousel-item">
-                          <img src="/assets/img/Warlock.png" alt="Warlock">
+                          <img src="../../assets/img/Warlock.png" alt="Warlock">
                           <p>Warlock</p>
                         </div>
                         <div class="carousel-item">
-                          <img src="/assets/img/Wizard.png" alt="Wizard"><br>
+                          <img src="../../assets/img/Wizard.png" alt="Wizard"><br>
                           <p>Wizard</p>
                         </div>
                       </div>
@@ -86,7 +86,7 @@ const characters = async () => {
                 <div class="div__add">
                     <button class="button__add" id="openDialog">
                         <div class="button__add">
-                            <img src="/assets/img/Add.svg" alt="Add Character">
+                            <img src="../../assets/img/Add.svg" alt="Add Character">
                         </div>
                     </button>
                 </div>
@@ -104,7 +104,7 @@ const characters = async () => {
                         <div class="card-frame">
                             <div class="card-top-banner"><strong>Walk</strong></div>
                             <div class="card-image">
-                                <img src="/assets/img/${character.name}.png" alt="${character.name}">
+                                <img src="../../assets/img/${character.name}.png" alt="${character.name}">
                             </div>
                             <div class="card-separator"></div>
                             <div class="card-info">
