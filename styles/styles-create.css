@@ -470,3 +470,18 @@ footer {
     transform: translateY(0);
   }
 }
+/*****************contact us********************/
+.div__name {
+  background: red;
+}
+.div__name_img {
+  background: green;
+  display: flex;
+}
+.backgr__img {
+  background: yellow;
+  width:40%;
+}
+.backgr__img img{
+  width: 50%;
+}
