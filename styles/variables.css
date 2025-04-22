@@ -10,3 +10,7 @@
     font-family: "Jacquard24-Regular";
     src: url(../assets/font/Jacquard_24/Jacquard24-Regular.ttf);
 }
+@font-face {
+    font-family: "MedievalSharp-Regular";
+    src: url(../assets/font/MedievalSharp/MedievalSharp-Regular.ttf);
+}
