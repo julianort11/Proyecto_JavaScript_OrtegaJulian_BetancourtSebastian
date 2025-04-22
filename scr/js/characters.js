@@ -102,7 +102,7 @@ const characters = async () => {
                 <div class="div__card">
                     <a href="#">
                         <div class="card-frame">
-                            <div class="card-top-banner"><strong>Walk</strong></div>
+                            <div class="card-top-banner"><strong>${character.name}</strong></div>
                             <div class="card-image">
                                 <img src="../../assets/img/${character.name}.png" alt="${character.name}">
                             </div>
