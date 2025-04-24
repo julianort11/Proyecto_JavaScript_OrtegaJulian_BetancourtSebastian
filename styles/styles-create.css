@@ -1,4 +1,4 @@
-@import url(variables.css);
+@import url(./variables.css);
 
 * {
   margin: 0;
@@ -82,7 +82,7 @@ main{
 }
 .main__container {
   flex-direction: column;
-  height: 38em;
+  height: 48em;
   display: flex;
   gap: 25px;
   background-size: cover;
@@ -262,7 +262,10 @@ footer {
     inset 0 0 20px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
 }
-
+.div__card:hover{
+  transform: scale(1.2);
+  transition: 0.5s;
+}
 .card__frame {
   background: #f1e7c4;
   width: 100%;
@@ -744,3 +747,157 @@ button#saveCharacter:active {
   transform: scale(1.5);
   cursor: pointer;
 }
+
+/* ----------------Dialog Card--------------- */
+.dialog__card{
+  justify-self: center;
+  align-self: center;
+  width: 22rem;
+  height: 30rem;
+  border: none;
+  border-radius: 20px;
+}
+.dialog__contentMore{
+  border: 1px solid;
+  width: 100%;
+  height: 100%;
+  box-shadow:
+    4px 4px 10px rgba(0, 0, 0, 0.6),
+    -4px -4px 10px rgba(0, 0, 0, 0.4),
+    inset 0 2px 5px rgba(255, 255, 255, 0.1);
+  background: linear-gradient(to bottom, #433d33, #ab9257);
+  border-radius: 20px;
+}
+
+.card__top_bannerMore {
+  background: linear-gradient(to bottom, #c1a574, #71581d);
+  height: 8%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom: 1px solid #3e2b1e;
+  text-align: center;
+  color: #2c1e10;
+  align-content: center;
+  font-size: 27px;
+  font-family: "Jacquard24-Regular";
+}
+
+.card__imageMore {
+  background: url(../assets/img/caard-background.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__imageMore img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.card__separatorMore {
+  background: linear-gradient(to bottom, #c1a574, #71581d);
+  height: 8%;
+  border-top: 1px solid #3e2b1e;
+  border-bottom: 1px solid #3e2b1e;
+}
+
+.card__infoMore {
+  display: flex;
+  height: 30%;
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  justify-content:space-between;
+  font-size: 69%;
+  font-weight: 900;
+  gap: 6%;
+}
+
+.card__infoMore p {
+  color: #2c1e10;
+}
+.oneInfo{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.oneInfo div{
+  display: flex;
+  font-family: "Kanit-SemiBoldItalic";
+  gap: 2px;
+  text-align: center;
+}
+.oneInfo div strong{
+  font-size: 130%;
+}
+
+.oneInfo div p{
+  font-size: 110%;
+}
+.twoInfo{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.twoInfo div{
+  display: flex;
+  font-family: "Kanit-SemiBoldItalic";
+  gap: 2px;
+  text-align: center;
+}
+.twoInfo div strong{
+  font-size: 130%;
+}
+.twoInfo div p{
+  font-size: 110%;
+}
+
+.saveCard{
+  position: relative;
+  top: 8px;
+  width: 50%;
+  height: 8%;
+  border-radius: 30px;
+  margin-left: 15%;
+  border: none;
+  cursor: pointer;
+  font-family: "Kanit-SemiBoldItalic";
+  background: #83511fbf;
+  color: white;
+  font-size: 15px;
+}
+.saveCard::before{
+  content: "Save";
+}
+.saveCard:hover{
+  background: #683a0cbf;
+}
+.saveCard:active{
+  background: rgb(39, 158, 39);
+}
+.saveCard:active::before{
+  content: "✔";
+  font-size: 28px;
+}
+.card__footerMore {
+  position: relative;
+  bottom: 14px;
+  right: 9px;
+  justify-self: flex-end;
+  width: 8%;
+  border-radius: 100%;
+  text-align: center;
+  background: linear-gradient(to bottom, #533302, #937734);
+  box-shadow:
+    4px 4px 10px rgba(0, 0, 0, 0.6),
+    -4px -4px 10px rgba(82, 62, 62, 0.4),
+    inset 0 2px 5px rgba(255, 197, 197, 0.1);
+}
+
+
+
+

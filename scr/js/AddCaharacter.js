@@ -19,7 +19,7 @@ export const addCharacter = () => {
       div.classList.add('carousel-item');
       div.dataset.class = cls.index;
 
-      const classNameImage = cls.name; 
+      const classNameImage = cls.name.toLowerCase(); 
       const imgSrc = `../../assets/img/${classNameImage}.png`;
 
       const img = document.createElement('img');
@@ -209,4 +209,28 @@ async function loadClassAccessories(classIndex) {
     const dialog = document.querySelector('#characterDialog');
     dialog.close();
   });
+
+  
+  document.addEventListener('click', function (e) {
+    if (e.target.classList.contains('view-more-btn')) {
+      const characterId = e.target.getAttribute('data-id');
+      const dialog = document.querySelector(`#card__more_${characterId}`);
+      if (dialog && !dialog.open) {
+        dialog.showModal();
+      }
+      return; 
+    }
+  
+    const openDialogs = document.querySelectorAll('dialog[open]');
+    openDialogs.forEach(dialog => {
+      const content = dialog.querySelector('.dialog__contentMore');
+      if (content && !content.contains(e.target)) {
+        dialog.close();
+      }
+    });
+  });
+  
+  
+  
+
 };

@@ -17,6 +17,8 @@
 @font-face {
     font-family: "Kanit-SemiBoldItalic";
     src: url(../assets/font/Kanit/Kanit-SemiBoldItalic.ttf);
+}
+@font-face {
     font-family: "MedievalSharp-Regular";
     src: url(../assets/font/MedievalSharp/MedievalSharp-Regular.ttf);
 }
