@@ -8,7 +8,6 @@
 
 body {
   height: 120vh;
-  
   font-family: 'Cinzel', serif;
 }
 
@@ -443,7 +442,15 @@ footer {
   gap: 25px;
 }
 
-.dialog__form input {
+.div__write{ 
+  display: flex;
+  flex-direction: column;
+}
+.div__write span{
+  font-family: "MedievalSharp-Regular";
+  font-size: 1.1rem;
+}
+.div__write input {
   padding: 10px;
   margin: 10px 0;
   border-radius: 8px;
@@ -451,9 +458,10 @@ footer {
   font-size: 1.1rem;
   background: #f1e7c4;
   transition: border-color 0.2s ease;
+  font-family: "MedievalSharp-Regular";
 }
 
-.dialog__form input:focus {
+.div__write input:focus {
   border-color: var(--color-2);
   outline: none;
   box-shadow: 0 0 5px var(--color-2);
@@ -463,7 +471,12 @@ footer {
 .classGame {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
+}
+
+.classGame strong{
+  font-size: 1.1rem;
+  font-family: "MedievalSharp-Regular";
 }
 
 .carousel {
@@ -497,6 +510,7 @@ footer {
   font-weight: 800;
   font-size: 150%;
   color: #180f07;
+  padding-left: 40%;
 }
 
 .carousel-item img {
@@ -544,6 +558,200 @@ footer {
   flex-direction: column;
 }
 
+.raceGame strong{
+  font-size: 1.1rem;
+  font-family: "MedievalSharp-Regular";
+}
+
+.raceGame select {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #5a3d29;
+  font-size: 1.1rem;
+  background: #f1e7c4;
+  transition: border-color 0.2s ease;
+  font-family: "MedievalSharp-Regular";
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.raceGame select:focus {
+  border-color: var(--color-2);
+  outline: none;
+  box-shadow: 0 0 5px var(--color-2);
+}
+
+.genderGame{
+  display: flex;
+  flex-direction: column;
+}
+
+.genderGame strong{
+  font-size: 1.1rem;
+  font-family: "MedievalSharp-Regular";
+}
+
+.genderGame select {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #5a3d29;
+  font-size: 1.1rem;
+  background: #f1e7c4;
+  transition: border-color 0.2s ease;
+  font-family: "MedievalSharp-Regular";
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.genderGame select:focus {
+  border-color: var(--color-2);
+  outline: none;
+  box-shadow: 0 0 5px var(--color-2);
+}
+
+.armorWeapons{
+  display: flex;
+  flex-direction: column;
+}
+
+.armorWeapons strong{
+  font-size: 1.1rem;
+  font-family: "MedievalSharp-Regular";
+}
+
+.armorWeapons select {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #5a3d29;
+  font-size: 1.1rem;
+  background: #f1e7c4;
+  transition: border-color 0.2s ease;
+  font-family: "MedievalSharp-Regular";
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.armorWeapons select:focus {
+  border-color: var(--color-2);
+  outline: none;
+  box-shadow: 0 0 5px var(--color-2);
+}
+
+.abilities{
+  display: flex;
+  flex-direction: column;
+}
+
+.abilities strong{
+  font-size: 1.1rem;
+  font-family: "MedievalSharp-Regular";
+}
+
+.abilities select {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #5a3d29;
+  font-size: 1.1rem;
+  background: #f1e7c4;
+  transition: border-color 0.2s ease;
+  font-family: "MedievalSharp-Regular";
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.abilities select:focus {
+  border-color: var(--color-2);
+  outline: none;
+  box-shadow: 0 0 5px var(--color-2);
+}
+
+.specialSkills{
+  display: flex;
+  flex-direction: column;
+}
+
+.specialSkills strong{
+  font-size: 1.1rem;
+  font-family: "MedievalSharp-Regular";
+}
+
+.specialSkills select {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #5a3d29;
+  font-size: 1.1rem;
+  background: #f1e7c4;
+  transition: border-color 0.2s ease;
+  font-family: "MedievalSharp-Regular";
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.specialSkills select:focus {
+  border-color: var(--color-2);
+  outline: none;
+  box-shadow: 0 0 5px var(--color-2);
+}
+
+.accessories{
+  display: flex;
+  flex-direction: column;
+}
+
+.accessories strong{
+  font-size: 1.1rem;
+  font-family: "MedievalSharp-Regular";
+}
+
+.accessories select {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #5a3d29;
+  font-size: 1.1rem;
+  background: #f1e7c4;
+  transition: border-color 0.2s ease;
+  font-family: "MedievalSharp-Regular";
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.accessories select:focus {
+  border-color: var(--color-2);
+  outline: none;
+  box-shadow: 0 0 5px var(--color-2);
+}
+
+.send{
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #5a3d29;
+  font-size: 1.1rem;
+  background: #f1e7c4;
+  transition: border-color 0.2s ease;
+  font-family: "MedievalSharp-Regular";
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.send{
+  border-color: var(--color-2);
+  outline: none;
+  box-shadow: 0 0 5px var(--color-2);
+}
 
 /* Botón de guardar */
 button#saveCharacter {
