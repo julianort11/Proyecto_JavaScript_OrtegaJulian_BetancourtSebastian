@@ -11,12 +11,6 @@
     src: url(../assets/font/Jacquard_24/Jacquard24-Regular.ttf);
 }
 @font-face {
-    font-family: "Kanit-Light";
-    src: url(../assets/font/Kanit/Kanit-Light.ttf);
-}
-@font-face {
-    font-family: "Kanit-SemiBoldItalic";
-    src: url(../assets/font/Kanit/Kanit-SemiBoldItalic.ttf);
     font-family: "MedievalSharp-Regular";
     src: url(../assets/font/MedievalSharp/MedievalSharp-Regular.ttf);
 }
