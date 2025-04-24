@@ -13,81 +13,82 @@ const characters = async () => {
         let charactersHTML = `
             <h2>Personajes</h2>
             <dialog id="characterDialog" class="dialog__Add">
-                <div class="dialog__container">
-                  <button class="button__close" id="closeDialog">X</button>
-                  <div class="dialog__header">
-                    <h2>Create your character</h2>
+              <div class="dialog__container">
+                <button class="button__close" id="closeDialog">X</button>
+                <div class="dialog__header">
+                  <h2>Create your character</h2>
+                </div>
+                <div class="dialog__content">
+                  <!-- Campo de nombre -->
+                  <div class="div__form">
+                    <form id="characterForm">
+                      <span>Write name of character: </span>
+                      <input type="text" name="name" id="name" placeholder="Enter character name" required />
+                      <span>Write detail of character: </span>
+                      <input type="text" name="details" id="details" placeholder="Enter character details" />
+                    
                   </div>
 
-                  <div class="dialog__content">
-                    <div class="classGame">
-                      <strong>Choose your Class: </strong>
-                    </div>
-
+                  <!-- Carrusel de clases -->
+                  <div class="classGame">
+                    <strong>Choose your Class:</strong>
                     <div class="carousel">
-                      <div class="carousel-inner">
-                        <div class="carousel-item active">
-                          <img src="../../assets/img/Barbarian.png" alt="Barbarian">
-                          <p>Barbarian</p>
-                        </div>
-                        <div class="carousel-item">
-                          <img src="../../assets/img/Bard.png" alt="Bard">
-                          <p>Bard</p>
-                        </div>
-                        <div class="carousel-item">
-                          <img src="../../assets/img/Cleric.png" alt="Cleric">
-                          <p>Cleric</p>
-                        </div>
-                        <div class="carousel-item">
-                          <img src="../../assets/img/Druid.png" alt="Druid">
-                          <p>Druid</p>
-                        </div>
-                        <div class="carousel-item">
-                          <img src="../../assets/img/Fighter.png" alt="Fighter">
-                          <p>Fighter</p>
-                        </div>
-                        <div class="carousel-item">
-                          <img src="../../assets/img/Monk.png" alt="Monk">
-                          <p>Monk</p>
-                        </div>
-                        <div class="carousel-item">
-                          <img src="../../assets/img/Paladin.png" alt="Paladin">
-                          <p>Paladin</p>
-                        </div>
-                        <div class="carousel-item">
-                          <img src="../../assets/img/Ranger.png" alt="Ranger">
-                          <p>Ranger</p>
-                        </div>
-                        <div class="carousel-item">
-                          <img src="../../assets/img/Rogue.png" alt="Rogue">
-                          <p>Rogue</p>
-                        </div>
-                        <div class="carousel-item">
-                          <img src="../../assets/img/Sorcerer.png" alt="Sorcerer">
-                          <p>Sorcerer</p>
-                        </div>
-                        <div class="carousel-item">
-                          <img src="../../assets/img/Warlock.png" alt="Warlock">
-                          <p>Warlock</p>
-                        </div>
-                        <div class="carousel-item">
-                          <img src="../../assets/img/Wizard.png" alt="Wizard"><br>
-                          <p>Wizard</p>
-                        </div>
+                      <div class="carousel-inner" id="classCarousel">
+                        <!-- Clases se cargarán dinámicamente aquí -->
                       </div>
-
                       <button class="carousel-control prev" id="prevButton">❮</button>
                       <button class="carousel-control next" id="nextButton">❯</button>
                     </div>
                   </div>
-                </div>
-                <div class="div__form">
-                    <form action="?" method="get">
-                        <input type="text" name="name" id="name" placeholder="Enter name of character: ">
-                        <input type="detaliest" name="detalies" id="detalies" placeholder="Enter details of character: ">
-                    </form>
-                </div>
+
+                  <!-- Selector de raza -->
+                  <div class="raceGame">
+                    <strong>Choose your Race:</strong>
+                    <select id="raceSelect" class="select-group"></select>
+                  </div>
+
+                  <!-- Selector de género -->
+                  <div class="genderGame">
+                    <strong>Choose your Gender:</strong>
+                    <select id="genderSelect">
+                      <option value="Male">Masculino</option>
+                      <option value="Female">Femenino</option>
+                      <option value="Other">Otro</option>
+                    </select>
+                  </div>
+
+                  <!-- Equipo y armas -->
+                  <div class="armorWeapons">
+                    <strong>Choose your Armor and Weapons:</strong>
+
+                    <select id="equipmentSelect"></select>
+                  </div>
+
+                  <!-- Habilidades -->
+                  <div class="abilities">
+                    <strong>Abilities:</strong>
+                    <select id="abilities"></select>
+                  </div>
+
+                  <!-- Habilidades especiales -->
+                  <div class="specialSkills">
+                    <strong>Special Skills:</strong>
+                    <select id="skills"></select>
+                  </div>
+
+                  <!-- Accesorios -->
+                  <div class="accessories">
+                    <strong>Accessories:</strong>
+                    <select id="accessories"></select>
+                  </div>
+
+                  <!-- Botón de guardar -->
+                  <input type="submit" id="saveCharacter" value="Save Character">
+                </form>
+                  </div>
+              </div>
             </dialog>
+
             <div class="div__characters">
                 <div class="div__add">
                     <button class="button__add" id="openDialog">

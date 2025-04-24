@@ -346,82 +346,133 @@ footer {
 /* -------------------------Dialog ADD------------------------------- */
 
 
-.dialog__Add{
+.dialog__Add {
   justify-self: center;
   align-self: center;
-  width: 23rem;
-  height: 36rem;
+  width: 25rem;
+  height: 30rem;
   background: linear-gradient(to bottom right, #d2b378, #a97b50);
-  overflow-y: scroll;
-  border-radius: 30px;
+  overflow-y: auto;
+  border-radius: 20px;
   padding: 20px;
-}
-
-
-.button__close{
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   position: relative;
-  left: 96%;
-  bottom: 20px;
-  justify-self: end;
-  align-self: self-start;
-  width: 2rem;
-  height: 2rem;
-  align-items: center;
-  justify-content: center;
-  background: #b71f1d;
-  cursor: pointer;
-  box-shadow:
-    inset 0 0 25px rgba(56, 48, 40, 0.5),
-    0 10px 20px rgba(48, 36, 36, 0.6),
-    0 0 8px rgba(43, 29, 22, 0.4); 
-  border-top-right-radius: 20%;
-  border-bottom-right-radius: 20%;
-  border-bottom-left-radius: 20%;
-  border: none;
-}
-.button__close:hover{
-  background: #973f3f;
-  box-shadow:
-    inset 0 0 25px rgba(44, 30, 16, 0.5),
-    0 10px 20px rgba(0, 0, 0, 0.6),
-    0 0 8px rgba(40, 20, 10, 0.4); 
 }
 
+.dialog__Add .dialog__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.button__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #771312;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.button__close:hover {
+  background: #973f3f;
+  transform: scale(0.9);
+}
+
+.dialog__header {
+  text-align: center;
+}
+
+.dialog__header h2 {
+  font-family: "frost-scream";
+  font-size: 2rem;
+  color: var(--color-1);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  margin-bottom: 15px;
+  margin-top: 50px;
+}
+
+/* Formulario de creación de personaje */
+.dialog__content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.dialog__form input {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #5a3d29;
+  font-size: 1.1rem;
+  background: #f1e7c4;
+  transition: border-color 0.2s ease;
+}
+
+.dialog__form input:focus {
+  border-color: var(--color-2);
+  outline: none;
+  box-shadow: 0 0 5px var(--color-2);
+}
+
+/* Carrusel de clases */
+.classGame {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
 .carousel {
-  margin-top: 10px;
   position: relative;
   width: 100%;
   height: 12rem;
-  
+  border-radius: 10px;
+  background: #472b1840;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
+.carousel-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
 
 .carousel-item {
   background: #472b1840;
   border-radius: 10px;
-  box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
   width: 100%;
-  height: 200px;
+  height: 12rem;
   display: none;
+  padding: 20px;
 }
-.carousel-item p{
-  font-family: "frost-scream";
+
+.carousel-item p {
+  font-family: "Jacquard24-Regular";
   font-weight: 800;
-  font-size: 17px;
-  color: #493c2f;
+  font-size: 150%;
+  color: #180f07;
 }
 
 .carousel-item img {
-  width: 150px;
-  height: 160px;
+  margin-left: 33%;
+  margin-bottom: 6%;
+  max-width: 70%;
+  max-height: 70%;
 }
 
 .carousel-item.active {
   display: block;
-}
-.carousel-item.active  img{
-  margin-left: 87px;
 }
 
 .carousel-control {
@@ -445,30 +496,68 @@ footer {
 }
 
 .carousel-control:hover {
+  border-radius: 10px;
   box-shadow:
-    inset 0 0 25px rgba(44, 30, 16, 0.5),
-    0 10px 20px rgba(0, 0, 0, 0.6),
-    0 0 8px rgba(40, 20, 10, 0.4); 
-  transform: scale(1.01);
+    0 0 10px rgba(0, 0, 0, 0.5),
+    inset 0 0 20px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1);
+}
+
+/* Selectores de raza, género, equipo */
+.raceGame{
+  display: flex;
+  flex-direction: column;
 }
 
 
-.classGame strong{
-  color: #41260b;
-  font-family: "Kanit-SemiBoldItalic";
+/* Botón de guardar */
+button#saveCharacter {
+  background: #3b2a1e;
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
+button#saveCharacter:hover {
+  background: #5a3d29;
+  transform: scale(1.05);
+}
 
+button#saveCharacter:active {
+  background: #4d3224;
+}
 
+/* Animación de entrada para el diálogo */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
+.dialog__Add {
+  animation: slideIn 0.3s ease-out;
+}
 
+/* Scroll del contenido */
 ::-webkit-scrollbar {
-  width: 4px;
+  width: 8px;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #5e2727;
   border-radius: 10px;
 }
+
 ::-webkit-scrollbar-track {
   background: #867d5d;
   border-radius: 10px;
