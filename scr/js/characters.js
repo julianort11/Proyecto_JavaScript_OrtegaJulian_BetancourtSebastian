@@ -11,7 +11,10 @@ const characters = async () => {
         }
 
         let charactersHTML = `
-            <h2>Personajes</h2>
+        <div class="main__characters">
+          <h2>Characters</h2>
+          <p>Create your character and get ready for the adventure</p>
+        </div>
             <dialog id="characterDialog" class="dialog__Add">
               <div class="dialog__container">
                 <button class="button__close" id="closeDialog">X</button>
@@ -108,20 +111,20 @@ const characters = async () => {
             const characterCard = `
                 <div class="div__card">
                     <a href="#">
-                        <div class="card-frame">
-                            <div class="card-top-banner"><strong>Walk</strong></div>
-                            <div class="card-image">
+                        <div class="card__frame">
+                            <div class="card__top_banner"><strong>${character.name}</strong></div>
+                            <div class="card__image">
                                 <img src="../../assets/img/${character.name}.png" alt="${character.name}">
                             </div>
-                            <div class="card-separator"></div>
-                            <div class="card-info">
+                            <div class="card__separator"></div>
+                            <div class="card__info">
                                 <p>
                                     <strong>Clase:</strong> ${character.name}<br><br>
                                     <strong>Subclase:</strong> ${subClass}<br><br>
                                     <strong>Raza:</strong> Humano (Ejemplo)
                                 </p>
                             </div>
-                            <div class="card-footer">
+                            <div class="card__footer">
                                 <a href="#">View More..</a>
                             </div>
                         </div>
