@@ -95,7 +95,7 @@ main{
 }
 dialog{
   position: fixed;
-  top: 50%;
+  top: 15%;
   left: 5%;
 } 
 .main__content {
@@ -968,7 +968,7 @@ button#saveCharacter:active {
   justify-self: center;
   align-self: center;
   width: 22rem;
-  height: 30rem;
+  height: 33rem;
   border: none;
   border-radius: 20px;
 }
@@ -986,7 +986,7 @@ button#saveCharacter:active {
 
 .card__top_bannerMore {
   background: linear-gradient(to bottom, #c1a574, #71581d);
-  height: 8%;
+  height: 10%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border-bottom: 1px solid #3e2b1e;
@@ -1021,54 +1021,57 @@ button#saveCharacter:active {
 
 .card__infoMore {
   display: flex;
-  height: 30%;
-  padding: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+  height: 35%;
+  padding: 15px;
+  /* margin-left: 5px; */
+  /* margin-right: 5px; */
   justify-content:space-between;
   font-size: 69%;
   font-weight: 900;
-  gap: 6%;
+  /* gap: 3%; */
 }
 
 .card__infoMore p {
   color: #2c1e10;
+  font-family: "MedievalSharp-Regular";
 }
 .oneInfo{
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
+  justify-content: center;
 }
 .oneInfo div{
   display: flex;
-  font-family: "Kanit-SemiBoldItalic";
-  gap: 2px;
-  text-align: center;
+  font-family: "MedievalSharp-Regular";
+  gap: 5px;
+  align-items: center;
 }
 .oneInfo div strong{
-  font-size: 130%;
+  font-size: 140%;
 }
 
 .oneInfo div p{
-  font-size: 110%;
+  font-size: 115%;
 }
 .twoInfo{
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
+  justify-content: center;
 }
 
 .twoInfo div{
   display: flex;
-  font-family: "Kanit-SemiBoldItalic";
-  gap: 2px;
-  text-align: center;
+  font-family: "MedievalSharp-Regular";
+  gap: 5px;
+  align-items: center;
 }
 .twoInfo div strong{
-  font-size: 130%;
+  font-size: 140%;
 }
 .twoInfo div p{
-  font-size: 110%;
+  font-size: 115%;
 }
 
 .saveCard{
@@ -1099,7 +1102,7 @@ button#saveCharacter:active {
   font-size: 28px;
 }
 .card__footerMore {
-  position: relative;
+  position: absolute;
   bottom: 14px;
   right: 9px;
   justify-self: flex-end;

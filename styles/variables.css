@@ -6,18 +6,12 @@
     font-family: "frost-scream";
     src: url(../assets/font/frost-scream/Frost\ Scream.otf);
 }
+
 @font-face {
     font-family: "Jacquard24-Regular";
     src: url(../assets/font/Jacquard_24/Jacquard24-Regular.ttf);
 }
-@font-face {
-    font-family: "Kanit-Light";
-    src: url(../assets/font/Kanit/Kanit-Light.ttf);
-}
-@font-face {
-    font-family: "Kanit-SemiBoldItalic";
-    src: url(../assets/font/Kanit/Kanit-SemiBoldItalic.ttf);
-}
+
 @font-face {
     font-family: "MedievalSharp-Regular";
     src: url(../assets/font/MedievalSharp/MedievalSharp-Regular.ttf);
