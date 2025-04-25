@@ -19,7 +19,7 @@ export const addCharacter = () => {
       div.classList.add('carousel-item');
       div.dataset.class = cls.index;
 
-      const classNameImage = cls.name.toLowerCase(); 
+      const classNameImage = cls.name; 
       const imgSrc = `../../assets/img/${classNameImage}.png`;
 
       const img = document.createElement('img');
@@ -149,47 +149,53 @@ async function loadClassAccessories(classIndex) {
     }
   });
 
-  saveButton.addEventListener('click', async () => {
-    const name = document.getElementById('name').value;
-    const details = document.getElementById('details').value;
-    const gender = document.getElementById('genderSelect').value;
-    const race = raceSelect.value;
-  
-    
-    const character = {
-      name: name,
-      details: details,
-      gender: gender,
-      race: race,
-      class: selectedClass,
-      abilities: abilitiesSelect.value,
-      skills: skillsSelect.value,
-      accessories: accessoriesSelect.value,
-      equipment: equipmentSelect.value
-    };
-  
-    try {
-      const response = await fetch('https://6806325bca467c15be6b8c11.mockapi.io/personajes', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(character),
-      });
-  
-      if (!response.ok) {
-        const errorText = await response.text(); 
-        throw new Error(`Server responded with: ${errorText}`);
-      }
-  
-      const data = await response.json();
-      alert('Character saved successfully!');
-      console.log('Character saved:', data);
-    } catch (error) {
-      console.error('Error saving character:', error);
-      alert('Error saving character');
+  const characterForm = document.getElementById('characterForm');
+  characterForm.addEventListener('submit', async (e) => {
+  e.preventDefault(); // 👈 Evita que se recargue la página
+
+  const name = document.getElementById('name').value;
+  const details = document.getElementById('details').value;
+  const gender = document.getElementById('genderSelect').value;
+  const race = raceSelect.value;
+
+  const character = {
+    name: name,
+    details: details,
+    gender: gender,
+    race: race,
+    class: selectedClass,
+    abilities: abilitiesSelect.value,
+    skills: skillsSelect.value,
+    accessories: accessoriesSelect.value,
+    equipment: equipmentSelect.value
+  };
+
+  try {
+    const response = await fetch('https://6806325bca467c15be6b8c11.mockapi.io/personajes', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(character),
+    });
+
+    if (!response.ok) {
+      const errorText = await response.text();
+      throw new Error(`Server responded with: ${errorText}`);
     }
-  });
+
+    const data = await response.json();
+    alert('Character saved successfully!');
+    console.log('Character saved:', data);
+
+    // Puedes cerrar el dialog aquí si quieres
+    document.querySelector('#characterDialog').close();
+
+  } catch (error) {
+    console.error('Error saving character:', error);
+    alert('Error saving character');
+  }
+});
   
 
   loadClasses();
@@ -209,7 +215,6 @@ async function loadClassAccessories(classIndex) {
     const dialog = document.querySelector('#characterDialog');
     dialog.close();
   });
-
   
   document.addEventListener('click', function (e) {
     if (e.target.classList.contains('view-more-btn')) {
@@ -220,7 +225,7 @@ async function loadClassAccessories(classIndex) {
       }
       return; 
     }
-  
+
     const openDialogs = document.querySelectorAll('dialog[open]');
     openDialogs.forEach(dialog => {
       const content = dialog.querySelector('.dialog__contentMore');
@@ -229,8 +234,5 @@ async function loadClassAccessories(classIndex) {
       }
     });
   });
-  
-  
-  
 
 };

@@ -1,4 +1,4 @@
-import { addCharacter } from "../js/AddCaharacter.js"; // ✅ Corrección de nombre
+import { addCharacter } from "../js/AddCaharacter.js"; 
 
 const characters = async () => {
     let charactersHTML = ``;
@@ -32,8 +32,8 @@ const characters = async () => {
                                 <strong>Choose your Class:</strong>
                                 <div class="carousel">
                                     <div class="carousel-inner" id="classCarousel"></div>
-                                    <button class="carousel-control prev" id="prevButton">❮</button>
-                                    <button class="carousel-control next" id="nextButton">❯</button>
+                                    <button class="carousel-control prev" id="prevButton" type="button">❮</button>
+                                    <button class="carousel-control next" id="nextButton" type="button">❯</button>
                                 </div>
                             </div>
 
@@ -85,74 +85,6 @@ const characters = async () => {
                         </div>
                     </button>
                 </div>
-
-                <!-- Carrusel de clases -->
-                <div class="classGame">
-                  <strong>Choose your Class:</strong>
-                  <div class="carousel">
-                    <div class="carousel-inner" id="classCarousel">
-                      <!-- Clases se cargarán dinámicamente aquí -->
-                    </div>
-                    <button class="carousel-control prev" id="prevButton">❮</button>
-                    <button class="carousel-control next" id="nextButton">❯</button>
-                  </div>
-                </div>
-
-                <!-- Selector de raza -->
-                <div class="raceGame">
-                  <strong>Choose your Race:</strong>
-                  <select id="raceSelect" class="select-group"></select>
-                </div>
-
-                <!-- Selector de género -->
-                <div class="genderGame">
-                  <strong>Choose your Gender:</strong>
-                  <select id="genderSelect">
-                    <option value="Male">Masculino</option>
-                    <option value="Female">Femenino</option>
-                    <option value="Other">Otro</option>
-                  </select>
-                </div>
-
-                <!-- Equipo y armas -->
-                <div class="armorWeapons">
-                  <strong>Choose your Armor and Weapons:</strong>
-                  <select id="equipmentSelect"></select>
-                </div>
-
-                <!-- Habilidades -->
-                <div class="abilities">
-                  <strong>skills:</strong>
-                  <select id="abilities"></select>
-                </div>
-
-                <!-- Habilidades especiales -->
-                <div class="specialSkills">
-                  <strong>Special Skills:</strong>
-                  <select id="skills"></select>
-                </div>
-
-                <!-- Accesorios -->
-                <div class="accessories">
-                  <strong>Accessories:</strong>
-                  <select id="accessories"></select>
-                </div>
-
-                <!-- Botón de guardar -->
-                <input class="send" type="submit" id="saveCharacter" value="Save Character">
-              </form>
-                </div>
-            </div>
-          </dialog>
-
-          <div class="div__characters">
-              <div class="div__add">
-                  <button class="button__add" id="openDialog">
-                      <div class="button__add">
-                          <img src="../../assets/img/Add.svg" alt="Add Character">
-                      </div>
-                  </button>
-              </div>
         `;
 
         for (const character of data) {
