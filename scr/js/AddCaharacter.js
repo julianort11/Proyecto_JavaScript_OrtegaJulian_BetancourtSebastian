@@ -19,7 +19,7 @@ export const addCharacter = () => {
       div.classList.add('carousel-item');
       div.dataset.class = cls.index;
 
-      const classNameImage = cls.name; 
+      const classNameImage = cls.name.toLowerCase(); 
       const imgSrc = `../../assets/img/${classNameImage}.png`;
 
       const img = document.createElement('img');

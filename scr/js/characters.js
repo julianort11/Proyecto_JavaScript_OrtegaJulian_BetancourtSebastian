@@ -154,5 +154,5 @@ export const renderCharacters = async () => {
     }
 
     charactersSection.innerHTML = await characters();
-    addCharacter(); // activa listeners
+    addCharacter(); 
 };

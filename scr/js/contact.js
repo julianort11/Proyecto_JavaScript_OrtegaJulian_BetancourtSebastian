@@ -7,7 +7,7 @@ export function renderContact(mainContent) {
   </div>
   <div class="div__name">
     <div class="div__name_img">
-      <h4>Julian Ortega</h4>
+    <h4>Julian Ortega</h4>
       <div class="backgr__img">
         <div class="backgr__img_git">
           <a href="https://github.com/julianort11"><img src="../../assets/img/github.png" alt="GitHub"></a>
@@ -17,7 +17,7 @@ export function renderContact(mainContent) {
         </div>
       </div>
 
-      <h4>Setabastian Betancourt</h4>
+    <h4>Setabastian Betancourt</h4>
       <div class="backgr__img">
         <div class="backgr__img_git">
           <a href="https://github.com/sebasBetancourt"><img src="../../assets/img/github.png" alt="GitHub"></a>
